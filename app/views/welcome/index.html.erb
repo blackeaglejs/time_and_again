@@ -1,2 +1,8 @@
-<h1>Welcome to the Time-off and Remote Work Management System</h1>
+<h1>Time and Again</h1>
+
+<% if current_user %>
+  <h3>Welcome <%= current_user.email %></h3>
+<% else %>
+  <h3><%= link_to 'Sign In', new_user_session_path %> | <%= link_to 'Create Account', new_user_registration_path %></h3>
+<% end %>
 
