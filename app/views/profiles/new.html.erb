@@ -1,0 +1,8 @@
+<h1>Create Your Profile</h1>
+
+<%= form_for :profile do |f| %>
+  <%= f.label :first_name %> <%= f.text_field :first_name %><br>
+  <%= f.label :last_name %> <%= f.text_field :last_name %><br>
+  <%= f.label :slack_username %> <%= f.text_field :slack_username %><br>
+  <%= f.label :secondary_email %> <%= f.text_field :secondary_email %>
+<% end %>
